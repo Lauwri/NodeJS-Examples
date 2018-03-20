@@ -1,0 +1,12 @@
+{
+  "name": "simple-server",
+  "version": "0.0.0",
+  "description": "very simple node server",
+  "main": "server.js",
+  "author": {
+    "name": "Lauri Mattila"
+  },
+  "dependencies": {
+    "xss-filters": "^1.2.7"
+  }
+}
