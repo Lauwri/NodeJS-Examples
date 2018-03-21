@@ -45,7 +45,11 @@ const server = http.createServer((req, res) => {
         res.write('Print the file content\n');
 
         fs.readFile('./temp_query', (err, data) => {
-            res.write(xss.inHTMLData(data.toString()));
+            if(err) {
+                res.write('You should save something first!');
+            } else {
+                res.write(xss.inHTMLData(data.toString()));
+            }
             res.end();
         });
         
